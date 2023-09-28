@@ -86,3 +86,10 @@ function App() {
 }
 
 export default App;
+
+// Modules to install
+//
+// 1. npm install react-router-dom
+// 2. npm install sass
+// 3. npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+// 4. npm install gh-pages --save-dev
