@@ -21,7 +21,7 @@ const Login = () => {
             to manage it using React.
           </p>
           <span>Don't have an account?</span>
-          <Link to="/register">
+          <Link to="/me-so-social/register">
             <button>Register</button>
           </Link>
         </div>
@@ -30,7 +30,9 @@ const Login = () => {
           <form>
             <input type="text" placeholder="Username" />
             <input type="password" placeholder="Password" />
-            <button onClick={handleLogin}>Login</button>
+            <Link to={`/me-so-social/`}>
+              <button onClick={login}>Login</button>
+            </Link>
           </form>
         </div>
       </div>

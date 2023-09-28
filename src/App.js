@@ -20,8 +20,7 @@ import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/authContext";
 
 function App() {
-  // const { currentUser } = useContext(AuthContext);
-  const currentUser = true;
+  const { currentUser } = useContext(AuthContext);
   const { darkMode } = useContext(DarkModeContext);
 
   console.log(darkMode);
@@ -43,7 +42,7 @@ function App() {
 
   const ProtectedRoute = ({ children }) => {
     if (!currentUser) {
-      return <Navigate to="/login" />;
+      return <Navigate to="/me-so-social/login" />;
     }
 
     return children;
@@ -51,7 +50,7 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/me-so-social",
       element: (
         <ProtectedRoute>
           <Layout />
@@ -59,21 +58,21 @@ function App() {
       ),
       children: [
         {
-          path: "/",
+          path: "/me-so-social",
           element: <Home />,
         },
         {
-          path: "/profile/:id",
+          path: "/me-so-social/profile/:id",
           element: <Profile />,
         },
       ],
     },
     {
-      path: "/login",
+      path: "/me-so-social/login",
       element: <Login />,
     },
     {
-      path: "/register",
+      path: "/me-so-social/register",
       element: <Register />,
     },
   ]);
