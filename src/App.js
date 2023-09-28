@@ -42,8 +42,7 @@ function App() {
 
   const ProtectedRoute = ({ children }) => {
     if (!currentUser) {
-      // return <Navigate to="/me-so-social/login" />;
-      return <Navigate to="/login" />;
+      return <Navigate to="/me-so-social/login" />;
     }
 
     return children;
@@ -51,8 +50,7 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      // path: "/me-so-social",
-      path: "/",
+      path: "/me-so-social",
       element: (
         <ProtectedRoute>
           <Layout />
@@ -60,26 +58,21 @@ function App() {
       ),
       children: [
         {
-          // path: "/me-so-social",
-          path: "/",
+          path: "/me-so-social",
           element: <Home />,
         },
         {
-          // path: "/me-so-social/profile/:id",
-          path: "/profile/:id",
+          path: "/me-so-social/profile/:id",
           element: <Profile />,
         },
       ],
     },
     {
-      // path: "/me-so-social/login",
-      path: "/login",
-
+      path: "/me-so-social/login",
       element: <Login />,
     },
     {
-      // path: "/me-so-social/register",
-      path: "/register",
+      path: "/me-so-social/register",
       element: <Register />,
     },
   ]);
