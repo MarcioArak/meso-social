@@ -14,12 +14,12 @@ import { AuthContext } from "../../context/authContext";
 
 const Navbar = () => {
   const { toggle, darkMode } = useContext(DarkModeContext);
-  const { currentUser } = useContext(AuthContext);
+  const { logout, currentUser } = useContext(AuthContext);
 
   return (
     <div className="navbar">
       <div className="left">
-        <Link to="/" style={{ textDecoration: "none" }}>
+        <Link to="/me-so-social" style={{ textDecoration: "none" }}>
           <span>me-so-social</span>
         </Link>
         <HomeOutlinedIcon />
@@ -36,7 +36,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="right">
-        <PersonOutlineOutlinedIcon />
+        <PersonOutlineOutlinedIcon onClick={logout} />
         <EmailOutlinedIcon />
         <NotificationsNoneOutlinedIcon />
         <div className="user">

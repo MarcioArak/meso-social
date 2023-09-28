@@ -23,7 +23,7 @@ const Register = () => {
             to manage it using React.
           </p>
           <span>Do you have an account?</span>
-          <Link to="/login">
+          <Link to="/me-so-social/login">
             <button>Login</button>
           </Link>
         </div>

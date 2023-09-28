@@ -5,7 +5,7 @@ export const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(
-    JSON.parse(localStorage.getItem("user")) || null
+    JSON.parse(localStorage.getItem("user")) || false
   );
 
   useEffect(() => {
@@ -18,11 +18,16 @@ export const AuthContextProvider = ({ children }) => {
       id: 1,
       name: "Marcio Arakaki",
       profilePic: profile,
+      currentUser: true,
     });
   };
 
+  const logout = () => {
+    setCurrentUser(!currentUser);
+  };
+
   return (
-    <AuthContext.Provider value={{ currentUser, login }}>
+    <AuthContext.Provider value={{ currentUser, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
