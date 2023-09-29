@@ -1,4 +1,4 @@
-# Me-so-social (Social media React App)
+# MeSo-social (Social media React App)
 
 [[Link to website]](https://marcioarak.github.io/me-so-social/)
 
