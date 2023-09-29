@@ -9,6 +9,8 @@ The website shows only the front-end with a few functionalities such as:
 * Able to click to your profile (but no editing)
 
 The application also has a responsive layout depending on the device. It is mobile and tablet friendly. It is built using react-router-dom and react hooks.
+As of now you can only login as myself because everything is hard coded, but will change it in the future to add users and connect it to a database.
+To view the homepage the login button must be clicked but no information is recorded.
 
 ## Futures updates include:
 * Make a database to register users
