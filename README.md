@@ -2,9 +2,15 @@
 
 [[Link to website]](https://marcioarak.github.io/me-so-social/)
 
+<img src="./src/assets/pictures/social-media-page.png">
+
+# Overview
+
 This project is a Social Media website made with React. It contains multiple pages such a a login, register, home and profile page. The application is not currently a full stack website as of now but will be in the future.
 The website shows only the front-end with a few functionalities such as:
-* Light and Dark theme when clicking the moon or sun button
+* Light and Dark theme when clicking the moon or sun button  
+  <img src="./src/assets/pictures/theme-light.png">  
+  <img src="./src/assets/pictures/theme-dark.png">
 * Logging out when clicking the person button (Temporary)
 * Able to click to your profile (but no editing)
 
