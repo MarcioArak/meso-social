@@ -1,3 +1,5 @@
+@import "../../style2.scss";
+
 .login {
   height: 100vh;
   background-color: rgb(193, 190, 255);
@@ -6,19 +8,23 @@
   justify-content: center;
 
   .card {
-    width: 800px;
     display: flex;
-    background-color: white;
+    max-width: 800px;
+    min-height: 600px;
     border-radius: 10px;
-    min-height: 500px;
+    background-color: white;
     overflow: hidden; // so the image does not cover border-radius
+
+    @include mobile {
+      flex-direction: column;
+      height: 100vh;
+    }
 
     .left {
       flex: 1;
       text-align: left;
       justify-content: flex-start;
 
-      height: auto;
       background-image: linear-gradient(
           rgba(39, 11, 96, 0.5),
           rgba(39, 11, 96, 0.5)
@@ -31,17 +37,30 @@
       padding-left: 50px;
       padding-right: 50px;
       padding-bottom: 100px;
+
       display: flex;
       flex-direction: column;
       gap: 10px;
       color: white;
 
+      @include mobile {
+        padding: 30px;
+      }
+
       h1 {
-        font-size: 80px;
-        line-height: 100px;
+        font-size: 60px;
+        line-height: 80px;
+
+        @include mobile {
+          font-size: 50px;
+          line-height: 70px;
+        }
       }
 
       p {
+        @include mobile {
+          display: none;
+        }
       }
 
       span {
@@ -68,9 +87,18 @@
       gap: 30px;
       justify-content: center;
 
+      @include mobile {
+        flex: 2;
+        padding: 20px 50px;
+      }
+
       h1 {
         color: #555;
         width: 25%;
+
+        @include mobile {
+          margin-bottom: -10px;
+        }
       }
 
       form {

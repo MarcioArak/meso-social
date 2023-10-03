@@ -16,14 +16,14 @@ const Register = () => {
           </form>
         </div>
         <div className="right">
-          <h1>Me So Social</h1>
+          <h1>MeSo Social</h1>
           <p>
-            Welcome to Me So Social. This application is a social media page
-            with the purpose of learning to create a social media page and how
-            to manage it using React.
+            Welcome to Me-so-Social. This application is a social media page
+            with the purpose of learning to create a social media application
+            and how to manage it using React.
           </p>
           <span>Do you have an account?</span>
-          <Link to="/me-so-social/login">
+          <Link to="/meso-social/login">
             <button>Login</button>
           </Link>
         </div>

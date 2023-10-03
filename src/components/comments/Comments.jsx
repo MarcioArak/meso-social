@@ -37,7 +37,7 @@ const Comments = () => {
           <img src={comment.profilePic} alt="" />
           <div className="info">
             <Link
-              to={`/me-so-social/profile/${comment.userId}`}
+              to={`/meso-social/profile/${comment.userId}`}
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <span>{comment.name}</span>

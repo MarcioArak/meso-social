@@ -14,14 +14,14 @@ const Login = () => {
     <div className="login">
       <div className="card">
         <div className="left">
-          <h1>Hello World.</h1>
+          <h1>Welcome to MeSo Social.</h1>
           <p>
-            Welcome to Me So Social. This application is a social media page
-            with the purpose of learning to create a social media page and how
-            to manage it using React.
+            Welcome to Me-so-Social. This application is a social media page
+            with the purpose of learning to create a social media application
+            and how to manage it using React.
           </p>
           <span>Don't have an account?</span>
-          <Link to="/me-so-social/register">
+          <Link to="/meso-social/register">
             <button>Register</button>
           </Link>
         </div>
@@ -30,7 +30,7 @@ const Login = () => {
           <form>
             <input type="text" placeholder="Username" />
             <input type="password" placeholder="Password" />
-            <Link to={`/me-so-social/`}>
+            <Link to={`/meso-social/`}>
               <button onClick={login}>Login</button>
             </Link>
           </form>
