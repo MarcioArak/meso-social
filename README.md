@@ -1,6 +1,6 @@
 # MeSo-social (Social media React App)
 
-[[Link to website]](https://marcioarak.github.io/me-so-social/)
+[[Link to website]](https://marcioarak.github.io/meso-social/)
 
 <img src="./src/assets/pictures/social-media-page.png">
 
