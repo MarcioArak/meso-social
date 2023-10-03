@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/meso-social/static/css/main.1044c0e1.css",
+    "main.css": "/meso-social/static/css/main.3233492f.css",
     "main.js": "/meso-social/static/js/main.444b60da.js",
     "static/js/787.b8ffd35e.chunk.js": "/meso-social/static/js/787.b8ffd35e.chunk.js",
     "static/media/people.jpg": "/meso-social/static/media/people.edeb68360d1194e42101.jpg",
     "static/media/people1.jpg": "/meso-social/static/media/people1.c418d7467b987a6f37ba.jpg",
     "static/media/Profile.jpg": "/meso-social/static/media/Profile.98c6b79d72e58e69ee34.jpg",
     "index.html": "/meso-social/index.html",
-    "main.1044c0e1.css.map": "/meso-social/static/css/main.1044c0e1.css.map",
+    "main.3233492f.css.map": "/meso-social/static/css/main.3233492f.css.map",
     "main.444b60da.js.map": "/meso-social/static/js/main.444b60da.js.map",
     "787.b8ffd35e.chunk.js.map": "/meso-social/static/js/787.b8ffd35e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1044c0e1.css",
+    "static/css/main.3233492f.css",
     "static/js/main.444b60da.js"
   ]
 }
