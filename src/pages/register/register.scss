@@ -1,3 +1,5 @@
+@import "../../style2.scss";
+
 .register {
   height: 100vh;
   background-color: rgb(193, 190, 255);
@@ -6,26 +8,43 @@
   justify-content: center;
 
   .card {
-    width: 800px;
     display: flex;
-    background-color: white;
+    max-width: 800px;
+    min-height: 600px;
     border-radius: 10px;
-    min-height: 500px;
+    background-color: white;
     overflow: hidden; // so the image does not cover border-radius
+
+    @include mobile {
+      flex-direction: column;
+      height: 100vh;
+    }
 
     .left {
       flex: 1;
-      padding: 50px;
       display: flex;
       flex-direction: column;
-      gap: 30px;
       justify-content: flex-start;
+      gap: 30px;
+      padding: 50px;
+
+      @include mobile {
+        flex: 1;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        padding-top: 0px;
+      }
 
       h1 {
         font-size: 35px;
         height: 8%;
         width: 25%;
         color: #555;
+
+        @include mobile {
+          margin-bottom: 0px;
+        }
       }
 
       form {
@@ -33,10 +52,18 @@
         flex-direction: column;
         gap: 20px;
 
+        @include mobile {
+          gap: 10px;
+        }
+
         input {
           border: none;
           border-bottom: 1px solid lightgray;
           padding: 20px 10px;
+
+          @include mobile {
+            padding: 2vh;
+          }
         }
 
         button {
@@ -53,10 +80,12 @@
 
     .right {
       flex: 1;
+      display: flex;
+      flex-direction: column;
       text-align: left;
       justify-content: flex-start;
 
-      height: auto;
+      color: white;
       background-image: linear-gradient(
           rgba(39, 11, 96, 0.5),
           rgba(39, 11, 96, 0.5)
@@ -68,30 +97,43 @@
 
       padding-left: 50px;
       padding-right: 50px;
-      display: flex;
-      flex-direction: column;
       gap: 10px;
-      color: white;
-    }
 
-    h1 {
-      font-size: 80px;
-      line-height: 100px;
-    }
+      @include mobile {
+        text-align: center;
+      }
 
-    span {
-      font-size: 14px;
-    }
+      h1 {
+        font-size: 70px;
+        line-height: 100px;
 
-    button {
-      width: 50%;
-      padding: 10px;
-      border: none;
-      background: white;
-      color: rebeccapurple;
-      font-weight: bold;
-      justify-content: right;
-      cursor: pointer;
+        @include mobile {
+          font-size: 60px;
+          line-height: 70px;
+          margin-bottom: 30px;
+        }
+      }
+
+      p {
+        @include mobile {
+          display: none;
+        }
+      }
+
+      span {
+        font-size: 14px;
+      }
+
+      button {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        background: white;
+        color: rebeccapurple;
+        font-weight: bold;
+        justify-content: right;
+        cursor: pointer;
+      }
     }
   }
 }

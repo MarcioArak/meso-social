@@ -4,7 +4,6 @@ import Register from "./pages/register/Register";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
   Outlet,
   Navigate,
 } from "react-router-dom";
@@ -42,7 +41,7 @@ function App() {
 
   const ProtectedRoute = ({ children }) => {
     if (!currentUser) {
-      return <Navigate to="/me-so-social/login" />;
+      return <Navigate to="/meso-social/login" />;
     }
 
     return children;
@@ -50,7 +49,7 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "/me-so-social",
+      path: "/meso-social",
       element: (
         <ProtectedRoute>
           <Layout />
@@ -58,21 +57,21 @@ function App() {
       ),
       children: [
         {
-          path: "/me-so-social",
+          path: "",
           element: <Home />,
         },
         {
-          path: "/me-so-social/profile/:id",
+          path: "profile/:id",
           element: <Profile />,
         },
       ],
     },
     {
-      path: "/me-so-social/login",
+      path: "/meso-social/login",
       element: <Login />,
     },
     {
-      path: "/me-so-social/register",
+      path: "/meso-social/register",
       element: <Register />,
     },
   ]);

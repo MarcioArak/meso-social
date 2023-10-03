@@ -23,7 +23,7 @@ const Post = ({ post }) => {
             <img src={post.profilePic} alt="" />
             <div className="details">
               <Link
-                to={`/me-so-social/profile/${post.userId}`}
+                to={`/meso-social/profile/${post.userId}`}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <span className="name">{post.name}</span>
