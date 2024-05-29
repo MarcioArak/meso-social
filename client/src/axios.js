@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const makeRequest = axios.create({
-  baseURL: `http://social-media-production-5b7b.up.railway.app/api/`,
+  baseURL: `https://jkljlkj.app/api/`,
   withCredentials: true,
 });
