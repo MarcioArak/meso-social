@@ -4,7 +4,7 @@
 
 <img src="./images/homepage.png">
 
-![Alt Text](https://github.com/MarcioArak/meso-social/blob/main/images/update_profile.gif)
+![Alt Text](./images/profile.gif)
 
 # Overview
 
