@@ -4,7 +4,7 @@
 
 <img src="./images/homepage.png">
 
-![Alt Text](./images/profile.gif)
+![Alt Text](./images/profile.mp4)
 
 # Overview
 
