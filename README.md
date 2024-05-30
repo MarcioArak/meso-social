@@ -5,6 +5,7 @@
 <img src="./images/homepage.png">
 
 ![Alt Text](./images/profile.gif)
+![Alt Text](./images/profile.gif)
 
 # Overview
 
@@ -13,22 +14,11 @@ The application is built using react-router-dom and react hooks.
 The website shows only the front-end with a few functionalities such as:
 
 - Light and Dark theme when clicking the moon or sun button  
-  <img src="./src/assets/pictures/theme-light.png">  
-  <img src="./src/assets/pictures/theme-dark.png">
+  <img src="./images/theme-light.png">  
+  <img src="./images/theme-dark.png">
 - Logging out when clicking the person button (Temporary)
 - Able to click to your profile (but no editing)
 - Respnsive layout (mobile and tablet friendly
-
-## How to view
-
-The application does not let you see the any pages others than the login/registraion page unless you are signed in. Because app is only used to showcase web design and styling as of now, you can only log in as myself.
-
-- To do this click the login button and you will be logged in. No information will be recorded when clicking the log in button or when registrating.
-- You can view the profile page by clicking on the names of the profile.
-- To logout of the site click the person icon on the right of the navbar, this will change in the future but for easy testing it's there.
-
-In the future I will connect the site to a database to have full functioning application
-but for now the site is for display only.
 
 ## Futures implementations:
 
