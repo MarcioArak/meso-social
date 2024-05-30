@@ -5,7 +5,7 @@
 <img src="./images/homepage.png">
 
 ![Alt Text](./images/profile.gif)
-![Alt Text](./images/profile.gif)
+![Alt Text](./images/homepage.gif)
 
 # Overview
 
