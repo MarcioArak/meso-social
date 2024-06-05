@@ -1,29 +1,41 @@
-# MeSo-social (Social media React App)
+# MeSo-social (Social-Media React App)
 
-[[Link to website]](https://marcioarak.github.io/meso-social/)
+## Overview
+
+This project is a social media website developed using React, featuring multiple pages including login, registration, home, and profile pages. The application incorporates both client and server sides, connected to a local database. Users can register, log in, and follow other users, enhancing the social networking experience.
+
+This application is designed to facilitate social interaction by allowing users to post images or text messages. Other users can engage with these posts through likes and comments, fostering a dynamic and interactive community environment
 
 <img src="./images/homepage.png">
 
-![Alt Text](./images/profile.gif)
+## Functionalities:
+
+- Register / Login
+- Post images / Delete posts
+- Like / Unlike posts
+- Comments on posts
+
 ![Alt Text](./images/homepage.gif)
 
-# Overview
+- Update profile pictures and other info
+- Update or change username and password
+- Edit posts
 
-This project is a Social Media website made with React. It contains multiple pages such a a login, register, home and profile page. The application is not currently a full stack website as of now but will be in the future.
-The application is built using react-router-dom and react hooks.  
-The website shows only the front-end with a few functionalities such as:
+![Alt Text](./images/profile.gif)
 
-- Light and Dark theme when clicking the moon or sun button  
-  <img src="./images/theme-light.png">  
-  <img src="./images/theme-dark.png">
-- Logging out when clicking the person button (Temporary)
-- Able to click to your profile (but no editing)
-- Respnsive layout (mobile and tablet friendly
+- Light and Dark theme
+
+![Alt Text](./images/theme.gif)
+
+- Responsive layout (mobile / iPad)
+
+![Alt Text](./images/layout.gif)
+
+# Technologies:
+
+- React
+- MySQL
 
 ## Futures implementations:
 
-- Make a database to register users
-- Functionality to post pictures or text posts
-- Add a function to comment on people's post
-- Add a fucntionality to follow and unfollow people
-- Edit profile box (name, location and website)
+- Deploy app as a fullstack website
